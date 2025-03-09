@@ -1,0 +1,14 @@
+# Ignore node_modules and build directories
+node_modules
+.next
+dist
+public
+
+# Ignore lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Ignore config files
+.eslintrc.json
+.prettierrc.json
