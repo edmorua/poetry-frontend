@@ -41,13 +41,13 @@ export const useEmailLogin = () =>
 				const response = await api.post<LoginResponse>("/auth/login", { email, password });
 				return response.data;
 			} catch (error) {
-				console.error("🔥 Local Login Error:", error);
+				console.error("Local Login Error:", error);
 				throw error;
 			}
 		},
 		onSuccess: (data) => {
 			localStorage.setItem("token", data.token);
-			console.log("✅ Local Login Successful:", data.user);
+			console.log("Local Login Successful:", data.user);
 		},
 	});
 
