@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { auth, googleProvider } from '../src/lib/firebaseConfig';
+import { auth, googleProvider } from '../../lib/firebaseConfig';
 import { createUserWithEmailAndPassword, signInWithPopup, User } from 'firebase/auth';
 
 export default function Register() {
